@@ -1,0 +1,5 @@
+reticulate::py_discover_config()
+reticulate::py_install(c("pip", "setuptools", "wheel"), pip = TRUE)
+reticulate::py_require(c("scipy"))
+reticulate::py_require(c("pandas", "matplotlib", "seaborn", "numpy"))
+rm(list=ls())
