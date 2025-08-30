@@ -1,9 +1,0 @@
-cooperativa <- rep(c("Consumidor", "Produtor", "Escola", "Outros"),c(376,643,343,189))
-cons <- rep(c("São Paulo", "Paraná", "Rio G. do Sul"), c(214,51,111))
-prod <- rep(c("São Paulo", "Paraná", "Rio G. do Sul"), c(237,102,304))
-esc <- rep(c("São Paulo", "Paraná", "Rio G. do Sul"), c(78,126,139))
-out <- rep(c("São Paulo", "Paraná", "Rio G. do Sul"), c(119,22,48))
-estado <- c(cons,prod,esc,out)
-df <- data.frame(cooperativa, estado)
-
-write_excel_csv2(df, "cooperativa.csv", na = "")
